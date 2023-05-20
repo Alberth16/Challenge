@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encriptar y Desencriptar</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body onload="handleLoad()">
+    <section>
+      <div class="boxForm">
+        <div class="logo">
+          <img src="./css/img/Vector.png" />
+        </div>
+        <form onsubmit="handleSubmit(event)">
+          <div class="contenerdor">
+            <div class="texto-a-encriptar">
+              <textarea id="textbox" name="textbox" placeholder="Ingrese el texto aqui"></textarea>
+            </div>
+            <div class="button_posicion">
+              <button type="submit" class="btn encriptar" onclick="encriptarTexto()">Encriptar</button>
+              <button type="submit" class="btn desencriptar" onclick="desencriptarTexto()">Desencriptar</button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div class="sider">
+        <div id="sin-incriptar" class="rectangle">
+          <img src="./css/img/Muñeco.png" alt="muneco" class="muneco" />
+          <h1 class="text-reactamgle">Ningun mensaje fue encontrado</h1>
+          <p class="text-reactamgle">Ingresa el texto que desees encriptar o desencriptar.</p>
+        </div>
+        <div id="texto-encriptado" class="hidden">
+          <div class="texto-resultado">
+            <p id="resultado"></p>
+          </div>
+          <div class="button_posicion">
+            <button type="submit" class="btn btn-copiar" onclick="copiarTextoEncriptado()">Copiar</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./js/funciones.js"></script>
+    <script></script>
+  </body>
+</html>
